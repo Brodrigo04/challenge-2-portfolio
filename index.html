@@ -1,31 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>My Portfolio Brandon Rodriguez</title>
-    <link rel="stylesheet" href="./style.css" href="./assets/css/style.css"> 
-    <body>
-        <header>
-            <h1>My Portfolio Brandon Rodriguez</h1>
-            <P>Welcome to my portfolio:)</P>
-        </header>
-        <p> Name:Brandon Rodriguez</p>
-        <link rel="stylesheet" href="indeed.com">
-        <li>Contact Me</li>
-
-        <nav><br></nav>
-        <main>
-            <section>
-                <div> 
-                    <img src="" alt="">
-                </div>
-            </section>
-        </main>
-    </body>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <header>
+        <div class="container">
+            <h1>Welcome to My Portfolio!</h1>
+            <nav>
+                <img src="assets/img/avatar.jpg" alt="">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Welcome to my portfolio! I am a passionate web developer my name is Brandon Rodriguez i go to UCF for software development and i am based in [Deltona, Florida]. I specialize in full-stack development and have experience with HTML, CSS, JavaScript, etc... and various frameworks such as React and node.js, etc...</p>
+        </div>
+    </section>
+
+    <section id="Projects" class="section">
+        <div class="container">
+            <h2>PROJECTS!</h2>
+            <div class="portfolio-items">
+                <!-- Portfolio items here -->
+                <div class="portfolio-item">
+                    <a href="https://jdesan.github.io/Couch-Surfing/">
+                    <img src="assets/img/OldCouch.jpg" alt="Project Couch Surfing">
+                    <h3>Project 1</h3></a>
+                    <p>A group project done by me and my collegaaus; who come together and made a application to solve cluelessness when it came to finding a movie or tv show!</p>
+                </div>
+                <div class="portfolio-item">
+                    <a href="https://brodrigo04.github.io/work-day-scheduler/">
+                    <img src="assets/img/schedule photo.jpg" alt="Scheduler App">
+                    <h3>Project 2</h3></a>
+                    <p> Work scheduler project aims to streamline task management processes, increase efficiency, and help users effectively prioritize and allocate their time to achieve their goals and objectives.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out to me via email at brandonlrodriguez25@gmail.com or through the contact form below:</p>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 My Portfolio</p>
+        </div>
+    </footer>
 </body>
 </html>
